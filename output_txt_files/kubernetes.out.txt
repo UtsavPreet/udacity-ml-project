@@ -1,0 +1,19 @@
+Utsavs-MacBook-Pro-2:project-ml-microservice-kubernetes utsav$ ./run_kubernetes.sh
+deployment.apps/ml-microservice created
+NAME                               READY   STATUS    RESTARTS   AGE
+ml-microservice-6c988c65f5-flwhr   0/1     Pending   0          0s
+service/ml-microservice-http exposed
+error: unable to forward port because pod is not running. Current status=Pending
+Utsavs-MacBook-Pro-2:project-ml-microservice-kubernetes utsav$ ./run_kubernetes.sh
+Error from server (AlreadyExists): deployments.apps "ml-microservice" already exists
+NAME                               READY   STATUS              RESTARTS   AGE
+ml-microservice-6c988c65f5-flwhr   0/1     ContainerCreating   0          5s
+Error from server (AlreadyExists): services "ml-microservice-http" already exists
+error: unable to forward port because pod is not running. Current status=Pending
+Utsavs-MacBook-Pro-2:project-ml-microservice-kubernetes utsav$ ./run_kubernetes.sh
+Error from server (AlreadyExists): deployments.apps "ml-microservice" already exists
+NAME                               READY   STATUS    RESTARTS   AGE
+ml-microservice-6c988c65f5-flwhr   1/1     Running   0          10s
+Error from server (AlreadyExists): services "ml-microservice-http" already exists
+Forwarding from 127.0.0.1:80 -> 80
+Forwarding from [::1]:80 -> 80
